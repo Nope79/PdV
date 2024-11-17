@@ -17,21 +17,6 @@ namespace pv.Frontend.Vistas
             LoadData();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VentasDiarias_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -42,15 +27,6 @@ namespace pv.Frontend.Vistas
             dtventas.DataSource = v.select_ventas();
         }
 
-        private void dtventas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void VentasDiarias_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnback_Click(object sender, EventArgs e)
         {
             main m = new main();
@@ -58,9 +34,29 @@ namespace pv.Frontend.Vistas
             this.Hide();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Ventasx_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime startDate = dtpinicio.Value.Date;
+            DateTime endDate = dtpfin.Value.Date;
+
+            if (startDate > endDate)
+            {
+                MessageBox.Show("La fecha de inicio no puede ser mayor que la fecha final.");
+            }
+            else
+            {
+                dtventas.DataSource = v.select_ventas_fecha(startDate, endDate);
+            }
+        }
+
+        private void btnnormal_Click(object sender, EventArgs e)
+        {
+            dtventas.DataSource = v.select_ventas();
         }
     }
 }

@@ -40,29 +40,29 @@
             this.lblpaga = new System.Windows.Forms.Label();
             this.btnventa = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblimpuestos = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblsubtotal = new System.Windows.Forms.Label();
+            this.lblimpuestos = new System.Windows.Forms.Label();
+            this.lblcajero = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.cbpago = new System.Windows.Forms.ComboBox();
             this.tbpaga = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblcajero = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtventa)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnback
@@ -91,10 +91,8 @@
             this.dtventa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dtventa.Size = new System.Drawing.Size(992, 445);
             this.dtventa.TabIndex = 2;
-            this.dtventa.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dtventa_CellBeginEdit);
             this.dtventa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtventa_CellClick);
-            this.dtventa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtventa_CellContentClick);
-            this.dtventa.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtventa_CellValueChanged);
+            this.dtventa.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dtventa_CellValidating);
             this.dtventa.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dtventa_RowsAdded);
             this.dtventa.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dtventa_RowsRemoved);
             // 
@@ -117,7 +115,6 @@
             this.lbltotal.Size = new System.Drawing.Size(59, 20);
             this.lbltotal.TabIndex = 5;
             this.lbltotal.Text = "TOTAL";
-            this.lbltotal.Click += new System.EventHandler(this.lblprecio_Click);
             // 
             // tbcod
             // 
@@ -180,7 +177,7 @@
             this.btnventa.Enabled = false;
             this.btnventa.Location = new System.Drawing.Point(32, 151);
             this.btnventa.Name = "btnventa";
-            this.btnventa.Size = new System.Drawing.Size(115, 48);
+            this.btnventa.Size = new System.Drawing.Size(115, 56);
             this.btnventa.TabIndex = 13;
             this.btnventa.Text = "Realizar venta";
             this.btnventa.UseVisualStyleBackColor = false;
@@ -207,14 +204,18 @@
             this.panel1.Size = new System.Drawing.Size(1408, 628);
             this.panel1.TabIndex = 14;
             // 
-            // lblimpuestos
+            // panel3
             // 
-            this.lblimpuestos.AutoSize = true;
-            this.lblimpuestos.Location = new System.Drawing.Point(628, 22);
-            this.lblimpuestos.Name = "lblimpuestos";
-            this.lblimpuestos.Size = new System.Drawing.Size(84, 20);
-            this.lblimpuestos.TabIndex = 18;
-            this.lblimpuestos.Text = "Impuestos";
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.Controls.Add(this.btnback);
+            this.panel3.Controls.Add(this.lblpaga);
+            this.panel3.Controls.Add(this.lblsubtotal);
+            this.panel3.Controls.Add(this.lblimpuestos);
+            this.panel3.Controls.Add(this.lbltotal);
+            this.panel3.Location = new System.Drawing.Point(0, 552);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1299, 76);
+            this.panel3.TabIndex = 22;
             // 
             // lblsubtotal
             // 
@@ -225,35 +226,49 @@
             this.lblsubtotal.TabIndex = 17;
             this.lblsubtotal.Text = "Subtotal";
             // 
-            // cbpago
+            // lblimpuestos
             // 
-            this.cbpago.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cbpago.FormattingEnabled = true;
-            this.cbpago.Items.AddRange(new object[] {
-            "Efectivo",
-            "Tarjeta de Crédito",
-            "Tarjeta de Débito",
-            "Transferencia Bancaria",
-            "Otro"});
-            this.cbpago.Location = new System.Drawing.Point(72, 345);
-            this.cbpago.Name = "cbpago";
-            this.cbpago.Size = new System.Drawing.Size(183, 28);
-            this.cbpago.TabIndex = 16;
-            this.cbpago.Visible = false;
-            this.cbpago.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.lblimpuestos.AutoSize = true;
+            this.lblimpuestos.Location = new System.Drawing.Point(628, 22);
+            this.lblimpuestos.Name = "lblimpuestos";
+            this.lblimpuestos.Size = new System.Drawing.Size(84, 20);
+            this.lblimpuestos.TabIndex = 18;
+            this.lblimpuestos.Text = "Impuestos";
             // 
-            // tbpaga
+            // lblcajero
             // 
-            this.tbpaga.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tbpaga.Location = new System.Drawing.Point(32, 426);
-            this.tbpaga.MaxLength = 11;
-            this.tbpaga.Name = "tbpaga";
-            this.tbpaga.Size = new System.Drawing.Size(143, 26);
-            this.tbpaga.TabIndex = 15;
-            this.tbpaga.Text = "Ingrese la cantidad";
-            this.tbpaga.Visible = false;
-            this.tbpaga.TextChanged += new System.EventHandler(this.tbpaga_TextChanged_1);
-            this.tbpaga.Enter += new System.EventHandler(this.tbpaga_Enter);
+            this.lblcajero.AutoSize = true;
+            this.lblcajero.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblcajero.Font = new System.Drawing.Font("Onyx", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcajero.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblcajero.Location = new System.Drawing.Point(12, 506);
+            this.lblcajero.Name = "lblcajero";
+            this.lblcajero.Size = new System.Drawing.Size(66, 33);
+            this.lblcajero.TabIndex = 21;
+            this.lblcajero.Text = "Cajero:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label6.Font = new System.Drawing.Font("Onyx", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label6.Location = new System.Drawing.Point(12, 223);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(215, 32);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Elije los elementos de la tabla";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(442, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 32);
+            this.label4.TabIndex = 11;
             // 
             // panel2
             // 
@@ -270,29 +285,46 @@
             this.panel2.Size = new System.Drawing.Size(1299, 78);
             this.panel2.TabIndex = 19;
             // 
-            // label3
+            // pictureBox4
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Font = new System.Drawing.Font("MoeumT R", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(12, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 31);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Punto de Venta";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(818, 13);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 15;
+            this.pictureBox4.TabStop = false;
             // 
-            // label4
+            // pictureBox3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Font = new System.Drawing.Font("MoeumT R", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(442, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 31);
-            this.label4.TabIndex = 11;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(715, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(613, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(322, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(275, 28);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Realizado en el ITSUR";
             // 
             // pictureBox1
             // 
@@ -305,83 +337,47 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Font = new System.Drawing.Font("MS PGothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(322, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 28);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Realizado en el itsur";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(12, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 32);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Punto de Venta";
             // 
-            // pictureBox2
+            // cbpago
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(613, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.cbpago.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cbpago.FormattingEnabled = true;
+            this.cbpago.Items.AddRange(new object[] {
+            "Efectivo",
+            "Tarjeta de Crédito",
+            "Tarjeta de Débito",
+            "Transferencia Bancaria",
+            "Otro"});
+            this.cbpago.Location = new System.Drawing.Point(18, 359);
+            this.cbpago.Name = "cbpago";
+            this.cbpago.Size = new System.Drawing.Size(183, 28);
+            this.cbpago.TabIndex = 16;
+            this.cbpago.Text = "Método Pago";
+            this.cbpago.Visible = false;
+            this.cbpago.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // pictureBox3
+            // tbpaga
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(715, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(818, 13);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(75, 65);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Font = new System.Drawing.Font("Onyx", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(12, 223);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(215, 32);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Elije los elementos de la tabla";
-            // 
-            // lblcajero
-            // 
-            this.lblcajero.AutoSize = true;
-            this.lblcajero.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblcajero.Font = new System.Drawing.Font("Onyx", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcajero.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblcajero.Location = new System.Drawing.Point(3, 340);
-            this.lblcajero.Name = "lblcajero";
-            this.lblcajero.Size = new System.Drawing.Size(66, 33);
-            this.lblcajero.TabIndex = 21;
-            this.lblcajero.Text = "Cajero:";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.Controls.Add(this.btnback);
-            this.panel3.Controls.Add(this.lblpaga);
-            this.panel3.Controls.Add(this.lblsubtotal);
-            this.panel3.Controls.Add(this.lblimpuestos);
-            this.panel3.Controls.Add(this.lbltotal);
-            this.panel3.Location = new System.Drawing.Point(0, 552);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1299, 76);
-            this.panel3.TabIndex = 22;
+            this.tbpaga.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbpaga.Location = new System.Drawing.Point(32, 407);
+            this.tbpaga.MaxLength = 11;
+            this.tbpaga.Name = "tbpaga";
+            this.tbpaga.Size = new System.Drawing.Size(143, 26);
+            this.tbpaga.TabIndex = 15;
+            this.tbpaga.Text = "Ingrese la cantidad";
+            this.tbpaga.Visible = false;
+            this.tbpaga.TextChanged += new System.EventHandler(this.tbpaga_TextChanged_1);
+            this.tbpaga.Enter += new System.EventHandler(this.tbpaga_Enter);
             // 
             // Vender
             // 
@@ -396,14 +392,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtventa)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -32,7 +32,6 @@
             this.btnback = new System.Windows.Forms.Button();
             this.dtticket = new System.Windows.Forms.DataGridView();
             this.tbid = new System.Windows.Forms.TextBox();
-            this.tbfecha = new System.Windows.Forms.TextBox();
             this.cbopcion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -45,7 +44,6 @@
             this.panel1.Controls.Add(this.btnback);
             this.panel1.Controls.Add(this.dtticket);
             this.panel1.Controls.Add(this.tbid);
-            this.panel1.Controls.Add(this.tbfecha);
             this.panel1.Controls.Add(this.cbopcion);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-3, -1);
@@ -67,10 +65,13 @@
             // 
             // dtticket
             // 
+            this.dtticket.AllowUserToAddRows = false;
+            this.dtticket.AllowUserToDeleteRows = false;
             this.dtticket.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dtticket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtticket.Location = new System.Drawing.Point(242, 46);
             this.dtticket.Name = "dtticket";
+            this.dtticket.ReadOnly = true;
             this.dtticket.RowHeadersWidth = 62;
             this.dtticket.RowTemplate.Height = 28;
             this.dtticket.Size = new System.Drawing.Size(1001, 363);
@@ -78,26 +79,17 @@
             // 
             // tbid
             // 
-            this.tbid.Location = new System.Drawing.Point(51, 178);
+            this.tbid.Location = new System.Drawing.Point(70, 178);
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(100, 26);
             this.tbid.TabIndex = 3;
             this.tbid.Visible = false;
             this.tbid.TextChanged += new System.EventHandler(this.tbid_TextChanged);
             // 
-            // tbfecha
-            // 
-            this.tbfecha.Location = new System.Drawing.Point(25, 178);
-            this.tbfecha.Name = "tbfecha";
-            this.tbfecha.Size = new System.Drawing.Size(164, 26);
-            this.tbfecha.TabIndex = 2;
-            this.tbfecha.Visible = false;
-            // 
             // cbopcion
             // 
             this.cbopcion.FormattingEnabled = true;
             this.cbopcion.Items.AddRange(new object[] {
-            "Fecha",
             "ID"});
             this.cbopcion.Location = new System.Drawing.Point(25, 93);
             this.cbopcion.Name = "cbopcion";
@@ -116,7 +108,6 @@
             this.label1.Size = new System.Drawing.Size(160, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar por...";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // VentaHecha
             // 
@@ -140,7 +131,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dtticket;
         private System.Windows.Forms.TextBox tbid;
-        private System.Windows.Forms.TextBox tbfecha;
         private System.Windows.Forms.ComboBox cbopcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnback;

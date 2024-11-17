@@ -23,10 +23,11 @@ namespace pv.Frontend.Ventas
         private Timer timer;
         public Vender()
         {
-            this.x = x;
+            var xid = Application.UserAppDataRegistry.GetValue("ID");
+            var xuser = Application.UserAppDataRegistry.GetValue("User");
             InitializeComponent();
             InicializarTimer();
-            lblcajero.Text = "Cajero: " + nombre_empleado;
+            lblcajero.Text = $"Cajero: {xuser}";
             Console.WriteLine(x.Item1);
         }
 
@@ -62,25 +63,20 @@ namespace pv.Frontend.Ventas
             }
         }
 
-        
-
-
         private void tbid_TextChanged(object sender, EventArgs e)
         {
             btnadd.Enabled = !string.IsNullOrWhiteSpace(tbcod.Text);
         }
 
-        
-
         private void btnadd_Click(object sender, EventArgs e)
         {
-            if (!Regex.Match(tbcod.Text, @"^\d{13}$").Success)
+            try
             {
-                MessageBox.Show("El código debe contener solo dígitos y exactamente 13.");
-            }
-            else
-            {
-                try
+                if (!Regex.Match(tbcod.Text, @"^\d{13}$").Success)
+                {
+                    MessageBox.Show("El código debe contener solo dígitos y exactamente 13.");
+                }
+                else
                 {
                     bool band = false;
 
@@ -119,24 +115,48 @@ namespace pv.Frontend.Ventas
 
                     ActualizarTotales();
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex);
-                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
             }
         }
 
-        
-
-        private void dtventa_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void dtventa_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
         {
             try
             {
                 if (e.ColumnIndex == dtventa.Columns["Cantidad"].Index)
                 {
-                    var cantidad = Convert.ToInt32(dtventa.Rows[e.RowIndex].Cells["Cantidad"].Value);
-                    var precio = Convert.ToDouble(dtventa.Rows[e.RowIndex].Cells["PrecioU"].Value);
-                    var iva = Convert.ToDouble(dtventa.Rows[e.RowIndex].Cells["IVA"].Value);
+                    var cantidadText = e.FormattedValue.ToString();
+                    int cantidad;
+                    if (!int.TryParse(cantidadText, out cantidad) || cantidad <= 0)
+                    {
+                        MessageBox.Show("Por favor, ingrese una cantidad válida.");
+                        e.Cancel = true; 
+                        return; 
+                    }
+
+                    var precioText = dtventa.Rows[e.RowIndex].Cells["PrecioU"].Value?.ToString(); 
+                    var ivaText = dtventa.Rows[e.RowIndex].Cells["IVA"].Value?.ToString();
+
+                    double precio = 0, iva = 0;
+                    bool precioValido = double.TryParse(precioText, out precio);
+                    bool ivaValido = double.TryParse(ivaText, out iva);
+
+                    if (!precioValido || precio <= 0)
+                    {
+                        MessageBox.Show("El precio unitario debe ser un número válido y mayor que cero.");
+                        e.Cancel = true;
+                        return;
+                    }
+
+                    if (!ivaValido || iva < 0)
+                    {
+                        MessageBox.Show("El IVA debe ser un número válido y mayor o igual a cero.");
+                        e.Cancel = true;
+                        return;
+                    }
 
                     var subtotal = cantidad * precio;
                     var impuesto = subtotal * iva / 100;
@@ -155,32 +175,34 @@ namespace pv.Frontend.Ventas
 
         private void ActualizarTotales()
         {
-            subtotal = 0.00;
-            iva = 0.00;
-            impuestos = 0.00;
-
-            for (int i = 0; i < dtventa.Rows.Count; i++)
+            try
             {
-                var cantidad = Convert.ToInt32(dtventa.Rows[i].Cells["Cantidad"].Value);
-                var precio = Convert.ToDouble(dtventa.Rows[i].Cells["PrecioU"].Value);
-                var ivaProducto = Convert.ToDouble(dtventa.Rows[i].Cells["IVA"].Value);
-                var impuestosProducto = Convert.ToDouble(dtventa.Rows[i].Cells["Impuesto"].Value);
-                var subtotalProducto = cantidad * precio;
+                subtotal = 0.00;
+                iva = 0.00;
+                impuestos = 0.00;
 
-                subtotal += subtotalProducto;
-                impuestos += impuestosProducto;
+                for (int i = 0; i < dtventa.Rows.Count; i++)
+                {
+                    var cantidad = Convert.ToInt32(dtventa.Rows[i].Cells["Cantidad"].Value);
+                    var precio = Convert.ToDouble(dtventa.Rows[i].Cells["PrecioU"].Value);
+                    var ivaProducto = Convert.ToDouble(dtventa.Rows[i].Cells["IVA"].Value);
+                    var impuestosProducto = Convert.ToDouble(dtventa.Rows[i].Cells["Impuesto"].Value);
+                    var subtotalProducto = cantidad * precio;
+
+                    subtotal += subtotalProducto;
+                    impuestos += impuestosProducto;
+                }
+
+                total = subtotal + impuestos;
+
+                lblsubtotal.Text = "Subtotal: " + subtotal.ToString("F2");
+                lblimpuestos.Text = "Impuestos: " + impuestos.ToString("F2");
+                lbltotal.Text = "TOTAL: " + total.ToString("F2");
             }
-
-            total = subtotal + impuestos;
-
-            lblsubtotal.Text = "Subtotal: " + subtotal.ToString("F2");
-            lblimpuestos.Text = "Impuestos: " + impuestos.ToString("F2");
-            lbltotal.Text = "TOTAL: " + total.ToString("F2");
-        }
-
-        private void dtventa_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
-        {
-            Console.WriteLine("Inicio de edición en celda.");
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
 
         int selectedRowIndex = 0;
@@ -188,21 +210,27 @@ namespace pv.Frontend.Ventas
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            met_pago = cbpago.SelectedItem.ToString();
-            if (cbpago.SelectedItem == null || cbpago.SelectedItem.ToString() == "Efectivo")
+            try
             {
-                tbpaga.Visible = true;
-                lblpaga.Text = "Paga: 0.0";
-            }
-            else
-            {
-                importe = total;
-                tbpaga.Visible = false;
-                tbpaga.Text = "Ingrese la cantidad";
-                lblpaga.Text = "Paga: " + total.ToString("F2");
-            }
+                if (cbpago.SelectedItem == null || cbpago.SelectedItem.ToString() == "Efectivo")
+                {
+                    tbpaga.Visible = true;
+                    lblpaga.Text = "Paga: 0.0";
+                }
+                else
+                {
+                    importe = total;
+                    tbpaga.Visible = false;
+                    tbpaga.Text = "Ingrese la cantidad";
+                    lblpaga.Text = "Paga: " + total.ToString("F2");
+                }
 
-            ActualizarEstadoBotonVenta();
+                ActualizarEstadoBotonVenta();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
 
         private void tbpaga_Enter(object sender, EventArgs e)
@@ -210,20 +238,22 @@ namespace pv.Frontend.Ventas
             tbpaga.Text = "";
         }
 
-        private void lblprecio_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void dtventa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            try
             {
-                selectedRowIndex = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    selectedRowIndex = e.RowIndex;
 
-                dtventa.Rows[e.RowIndex].Selected = true;
+                    dtventa.Rows[e.RowIndex].Selected = true;
 
-                btndelete.Enabled = true;
+                    btndelete.Enabled = true;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
             }
         }
 
@@ -246,11 +276,18 @@ namespace pv.Frontend.Ventas
 
         private void tbpaga_TextChanged(object sender, EventArgs e)
         {
-            if (cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() == "Efectivo")
+            try
             {
-                double paga = 0.0;
-                double.TryParse(tbpaga.Text, out paga);
-                btnventa.Enabled = paga >= total && dtventa.Rows.Count > 0;
+                if (cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() == "Efectivo")
+                {
+                    double paga = 0.0;
+                    double.TryParse(tbpaga.Text, out paga);
+                    btnventa.Enabled = paga >= total && dtventa.Rows.Count > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
             }
         }
 
@@ -258,129 +295,144 @@ namespace pv.Frontend.Ventas
         {
             try
             {
-                id_empleado = 1;
-                // int id_empleado, string descripcion, string met_pago, double importe, double subtotal, double iva, double total
-                Venta v = new Venta(id_empleado, met_pago, importe, subtotal, total);
-                bool x = v.GuardarVentaConDetalles(dtventa, v);
-
-                if (x)
+                bool aux = true;
+                if(cbpago.SelectedItem.ToString() == "Efectivo")
                 {
-                    this.Hide();
-                    main m = new main();
-                    m.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Error al realizar la venta. Inténtelo más tarde.");
+                    if (!Regex.Match(tbpaga.Text, @"^\d+(\.\d{1,2})?$").Success)
+                    {
+                        MessageBox.Show("Debes ingresar un formato válido para el pago.");
+                        aux = false;
+                    }
+                    else if (importe < total)
+                    {
+                        MessageBox.Show("El importe no puede ser menor al precio total de la venta.");
+                        aux = false;
+                    }
                 }
 
+                if (aux)
+                {
+                    met_pago = cbpago.SelectedItem.ToString();
+                    Venta v = new Venta(met_pago, importe, subtotal, total);
+                    bool x = v.GuardarVentaConDetalles(dtventa, v);
+
+                    if (x)
+                    {
+                        this.Hide();
+                        main m = new main();
+                        m.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al realizar la venta. Inténtelo más tarde.");
+                    }
+                }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                Console.WriteLine("Error al procesar la venta: " + ex.Message);
+                Console.WriteLine(ex);
             }
         }
 
         private void ActualizarEstadoBotonVenta()
         {
-            if((dtventa.Rows.Count > 0 && cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() != "Efectivo") || (dtventa.Rows.Count > 0 && cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() == "Efectivo"  && tbpaga.Text != ""))
+            try
             {
-                btnventa.Enabled = true;
+                if ((dtventa.Rows.Count > 0 && cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() != "Efectivo") || (dtventa.Rows.Count > 0 && cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() == "Efectivo" && tbpaga.Text != ""))
+                {
+                    btnventa.Enabled = true;
+                }
+                else
+                {
+                    btnventa.Enabled = false;
+                }
             }
-            else
+            catch(Exception ex)
             {
-                btnventa.Enabled = false;
+                Console.WriteLine(ex);
             }
         }
 
         private void Ventas_Load(object sender, EventArgs e)
         {
-            lbltotal.Text = "TOTAL: " + total.ToString("F2");
-            lblimpuestos.Text = "Impuestos: " + impuestos.ToString("F2");
-            lblsubtotal.Text = "Subtotal: " + subtotal.ToString("F2");
-            lblpaga.Text = "Paga: 0.00";
-
-            dtventa.Columns.Add("ID", "ID");
-            dtventa.Columns.Add("Producto", "Producto");
-            dtventa.Columns.Add("PrecioU", "Precio");
-            dtventa.Columns.Add("Cantidad", "Cantidad");
-            dtventa.Columns.Add("Subtotal", "Subtotal");
-            dtventa.Columns.Add("IVA", "IVA");
-            dtventa.Columns.Add("Impuesto", "Impuesto");
-            dtventa.Columns.Add("Cod", "Código");
-
-            foreach (DataGridViewColumn col in dtventa.Columns)
+            try
             {
-                col.ReadOnly = true;
-            }
-            dtventa.Columns["Cantidad"].ReadOnly = false;
+                lbltotal.Text = "TOTAL: " + total.ToString("F2");
+                lblimpuestos.Text = "Impuestos: " + impuestos.ToString("F2");
+                lblsubtotal.Text = "Subtotal: " + subtotal.ToString("F2");
+                lblpaga.Text = "Paga: 0.00";
 
-            ActualizarEstadoBotonVenta(); // Verifica el estado del botón al cargar
+                dtventa.Columns.Add("ID", "ID");
+                dtventa.Columns.Add("Producto", "Producto");
+                dtventa.Columns.Add("PrecioU", "Precio");
+                dtventa.Columns.Add("Cantidad", "Cantidad");
+                dtventa.Columns.Add("Subtotal", "Subtotal");
+                dtventa.Columns.Add("IVA", "IVA");
+                dtventa.Columns.Add("Impuesto", "Impuesto");
+                dtventa.Columns.Add("Cod", "Código");
+
+                foreach (DataGridViewColumn col in dtventa.Columns)
+                {
+                    col.ReadOnly = true;
+                }
+                dtventa.Columns["Cantidad"].ReadOnly = false;
+
+                ActualizarEstadoBotonVenta();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
 
         private void dtventa_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             cbpago.Visible = dtventa.Rows.Count > 0;
             ActualizarTotales();
-            ActualizarEstadoBotonVenta(); // Llama para verificar el estado del botón al agregar filas
+            ActualizarEstadoBotonVenta();
         }
 
         private void dtventa_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
             cbpago.Visible = dtventa.Rows.Count > 0;
             cbpago.SelectedItem = (dtventa.Rows.Count > 0) ? cbpago.SelectedItem : null;
-
             tbpaga.Visible = dtventa.Rows.Count > 0;
             ActualizarTotales();
-            ActualizarEstadoBotonVenta(); // Llama para verificar el estado del botón al quitar filas
+            ActualizarEstadoBotonVenta();
         }
 
         private void cbpago_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ActualizarEstadoBotonVenta(); // Llama para verificar el estado del botón al cambiar la selección del ComboBox
-
             if (cbpago.SelectedItem != null && cbpago.SelectedItem.ToString() == "Efectivo")
             {
-                btnventa.Visible = false;
-
                 tbpaga.Visible = true;
                 tbpaga.Text = "Ingrese la cantidad";
             }
-            else
-            {
-                btnventa.Visible = true;
-                ActualizarEstadoBotonVenta();
-            }
+            ActualizarEstadoBotonVenta();
+        }
+
+        private void tbpaga_MouseEnter(object sender, EventArgs e)
+        {
+            tbpaga.Text = "";
         }
 
         private void tbpaga_TextChanged_1(object sender, EventArgs e)
         {
-            tbpaga.Visible = true;
-            tbpaga.Text = "Ingrese la cantidad";
-            ActualizarEstadoBotonVenta();
-        }
-
-        private void dtventa_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            try
+            {
+                importe = Convert.ToDouble(tbpaga.Text);
+            }
+            catch (Exception ex)
+            {
+                importe = 0;
+            }
+            finally
+            {
+                lblpaga.Text = "Paga: " + importe.ToString("F2");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblcajero_Click(object sender, EventArgs e)
         {
 
         }

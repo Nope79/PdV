@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using pv.Frontend;
+using pv.Frontend.Vistas;
 
 namespace pv
 {
@@ -14,7 +15,7 @@ namespace pv
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new logmain());
+            Application.Run(new VentaHecha());
         }
     }
 }

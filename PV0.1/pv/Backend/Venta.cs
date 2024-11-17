@@ -23,9 +23,8 @@ namespace pv.Backend
             c = new Connection();
         }
 
-        public Venta(int id_empleado, string met_pago, double importe, double subtotal, double total)
+        public Venta(string met_pago, double importe, double subtotal, double total)
         {
-            this.id = id_empleado;
             this.met_pago = met_pago;
             this.importe = importe;
             this.subtotal = subtotal;
@@ -36,18 +35,17 @@ namespace pv.Backend
         public bool GuardarVentaConDetalles(DataGridView dtVenta, Venta venta)
         {
             bool x = false;
-            Console.WriteLine(venta.id_empleado + venta.met_pago + venta.importe + venta.subtotal + venta.total);
             MySqlTransaction transaction = null;
             try
             {
-                venta.id_empleado = 1;
-                // Abrir conexión
-                c.OpenConnection();
 
-                // Iniciar transacción
+                var xid = Application.UserAppDataRegistry.GetValue("ID");
+                var xuser = Application.UserAppDataRegistry.GetValue("User");
+                venta.id_empleado = Convert.ToInt32(xid);
+
+                c.OpenConnection();
                 transaction = c.GetConnection().BeginTransaction();
 
-                // Insertar la venta principal y obtener el ID
                 string queryVenta = @"INSERT INTO ventas (id_empleado, importe, subtotal, total, metodo_pago, descripcion) 
                                   VALUES (@idEmpleado, @importe, @subtotal, @total, @metodoPago, '')";
                 int idVenta;
@@ -60,11 +58,9 @@ namespace pv.Backend
                     cmdVenta.Parameters.AddWithValue("@metodoPago", venta.met_pago);
 
                     cmdVenta.ExecuteNonQuery();
-                    // Obtener el ID de la última venta
                     idVenta = (int)cmdVenta.LastInsertedId;
                 }
 
-                // Insertar los detalles de la venta
                 foreach (DataGridViewRow row in dtVenta.Rows)
                 {
                     if (row.Cells["ID"].Value != null)
@@ -91,24 +87,50 @@ namespace pv.Backend
                     }
                 }
 
-                // Confirmar transacción
                 transaction.Commit();
                 x = true;
                 Console.WriteLine("Venta y detalles registrados correctamente.");
             }
             catch (Exception ex)
             {
-                // Revertir cambios si ocurre un error
                 transaction?.Rollback();
                 Console.WriteLine("Error al registrar la venta y los detalles: " + ex.Message);
             }
             finally
             {
-                // Cerrar conexión
                 c.CloseConnection();
             }
 
             return x;
+        }
+
+        public DataTable select_ventas_fecha(DateTime startDate, DateTime endDate)
+        {
+            string query = @"
+                    SELECT * from ventas
+                    WHERE fecha BETWEEN @startDate AND @endDate";
+
+            DataTable tabla = new DataTable();
+            try
+            {
+                c.OpenConnection();
+                using (var command = new MySqlCommand(query, c.GetConnection()))
+                {
+                    command.Parameters.AddWithValue("@startDate", startDate);
+                    command.Parameters.AddWithValue("@endDate", endDate);
+
+                    using (var adapter = new MySqlDataAdapter(command))
+                    {
+                        adapter.Fill(tabla);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            return tabla;
         }
 
         public DataTable select_ventas()
