@@ -1,0 +1,415 @@
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\pv.exe
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\pv.pdb
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\source\repos\pv\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.exe
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.pdb
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\source\repos\pv\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\pv.exe
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\pv.pdb
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\source\repos\pv (2)\pv\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.exe
+C:\Users\Master79\source\repos\pv (2)\pv\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\pv.exe
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Desktop\pv (2)\pv\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.exe
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Desktop\pv (2)\pv\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\pv.exe
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.exe
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Downloads\pv (2) (1)\pv (2)\pv\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\Downloads\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Master79\Downloads\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.7\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\angel\OneDrive\Desktop\PV0.7\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\jovas\Downloads\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentasDiarias.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Downloads\PV0.7 (2)\PV0.7 (1)\PV0.7\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentaHecha.resources
+C:\Users\angel\OneDrive\Desktop\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.csproj.AssemblyReference.cache
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Confirmar.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.CRUD_Employees.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Update_Employee.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Create_Employee.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Create_Productos.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.CRUD_Productos.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Update_producto.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Login.Ingreso.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.main.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Registro.Registrar.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Ventas.Vender.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.VentaHecha.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Properties.Resources.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.csproj.GenerateResource.cache
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.csproj.CoreCompileInputs.cache
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\pv.exe.config
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\pv.exe
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\pv.pdb
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\Google.Protobuf.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\MySql.Data.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Buffers.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Memory.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\ZstdSharp.dll
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\Google.Protobuf.pdb
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\Google.Protobuf.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\MySql.Data.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Buffers.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Memory.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.csproj.Up2Date
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.exe
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.pdb
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.logmain.resources
+C:\Users\Master79\Downloads\proyecto remodelado-20241116T231435Z-001\proyecto remodelado\PV0.1\PV0.1\pv\obj\Debug\pv.Frontend.Vistas.Ventasx.resources

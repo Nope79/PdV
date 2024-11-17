@@ -1,0 +1,158 @@
+﻿using System;
+using System.Windows.Forms;
+using PuntoDeVenta;
+using pv.Backend;
+
+namespace pv.Frontend
+{
+    public partial class Update_Employee : Form
+    {
+        private Connection c = new Connection();
+        private Employees e;
+        private int id;
+        public Update_Employee(int id, string nombre, string usuario, string contra, string correo, string telefono)
+        {
+            InitializeComponent();
+            
+            tbname.Text = nombre;
+            tbuser.Text = usuario;
+            tbpass.Text = "";
+            tbpassc.Text = "";
+            tbmail.Text = correo;
+            tbphone.Text = telefono;
+            this.id = id;
+            this.Load += new EventHandler(Update_Employee_Load);
+        }
+
+
+        private void Update_Employee_Load(object sender, EventArgs e)
+        {
+            tbname.Focus();
+        }
+
+        private void tbname_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                tbuser.Focus();
+            }
+        }
+
+        private void tbuser_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                tbpass.Focus();
+            }
+        }
+
+        private void tbpass_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                tbpassc.Focus();
+            }
+        }
+
+        private void tbpassc_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                tbmail.Focus();
+            }
+        }
+
+        private void tbmail_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                tbphone.Focus();
+            }
+        }
+
+        private void tbphone_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnupdate.Focus(); // Cambia a btnUpdate o el botón que necesites enfocar
+            }
+        }
+
+        private void btnadd_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnback.PerformClick(); // Ejecuta el clic del botón al presionar Enter
+            }
+        }
+
+        private void btnback_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnback.PerformClick(); // Ejecuta el clic del botón al presionar Enter
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Create_Employee_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Employees ee = new Employees();
+                string res = ee.validar_insersion(id, tbname.Text, tbuser.Text, tbpass.Text, tbpassc.Text, tbmail.Text, tbphone.Text);
+                if (res == "OK")
+                {
+                    bool confirmed = Confirmar.Show("¿Estás seguro de que quieres modificar el usuario?\nUna vez hecho, no podrás deshacer los cambios.");
+                    if (confirmed)
+                    {
+                        string nombre = tbname.Text;
+                        string usuario = tbuser.Text;
+                        string contra = tbpass.Text;
+                        string correo = tbmail.Text;
+                        string telefono = tbphone.Text;
+                        ee.update_employees(id, nombre, usuario, contra, correo, telefono);
+
+                        this.Hide();
+                        CRUD_Employees ce = new CRUD_Employees();
+                        ce.Show();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(res);
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.Write(ex);
+            }
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            CRUD_Employees ce = new CRUD_Employees();
+            ce.Show();
+            this.Hide();
+        }
+    }
+}

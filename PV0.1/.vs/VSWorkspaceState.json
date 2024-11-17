@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\pv",
+    "\\pv\\Backend",
+    "\\pv\\Frontend",
+    "\\pv\\Frontend\\CRUD_E",
+    "\\pv\\Frontend\\CRUD_P",
+    "\\pv\\Frontend\\Ventas"
+  ],
+  "SelectedNode": "\\pv\\Frontend\\main.cs",
+  "PreviewInSolutionExplorer": false
+}

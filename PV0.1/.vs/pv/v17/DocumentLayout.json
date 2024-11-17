@@ -1,0 +1,304 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\vistas\\ventahecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\vistas\\ventahecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\login\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\login\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\login\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\login\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\ventas\\vender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\ventas\\vender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_p\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_p\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_p\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_p\\crud_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_p\\create_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_p\\create_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_p\\create_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_p\\create_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\registro\\registrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\registro\\registrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_e\\update_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_e\\update_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_e\\create_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_e\\create_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_e\\crud_employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_e\\crud_employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\frontend\\crud_e\\crud_employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\frontend\\crud_e\\crud_employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|c:\\users\\master79\\downloads\\proyecto remodelado-20241116t231435z-001\\proyecto remodelado\\pv0.1\\pv0.1\\pv\\backend\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB971BB0-B71A-43F4-B4F7-7FDCAD198AF7}|pv\\pv.csproj|solutionrelative:pv\\backend\\employees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentaHecha.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Vistas\\VentaHecha.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\Vistas\\VentaHecha.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Vistas\\VentaHecha.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\Vistas\\VentaHecha.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T03:23:22.723Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Vender.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Ventas\\Vender.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\Ventas\\Vender.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Ventas\\Vender.cs",
+              "RelativeToolTip": "pv\\Frontend\\Ventas\\Vender.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T03:03:38.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.Designer.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\main.Designer.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.Designer.cs",
+              "RelativeToolTip": "pv\\Frontend\\main.Designer.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:55:11.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CRUD_Productos.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAwHQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:53:25.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CRUD_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_P\\CRUD_Productos.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\CRUD_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_P\\CRUD_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:53:23.62Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create_Productos.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwGMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:52:28.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_P\\Create_Productos.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_P\\Create_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_P\\Create_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:50:46.174Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create_Employee.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\Create_Employee.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_E\\Create_Employee.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\Create_Employee.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_E\\Create_Employee.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:48:01.364Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Update_Employee.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\Update_Employee.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_E\\Update_Employee.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\Update_Employee.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_E\\Update_Employee.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:47:14.942Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CRUD_Employees.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAEwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:46:16.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CRUD_Employees.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\CRUD_E\\CRUD_Employees.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\CRUD_E\\CRUD_Employees.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\CRUD_E\\CRUD_Employees.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:46:11.163Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Employees.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Backend\\Employees.cs",
+              "RelativeDocumentMoniker": "pv\\Backend\\Employees.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Backend\\Employees.cs",
+              "RelativeToolTip": "pv\\Backend\\Employees.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAlwEEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:44:26.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ingreso.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Login\\Ingreso.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\Login\\Ingreso.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Login\\Ingreso.cs",
+              "RelativeToolTip": "pv\\Frontend\\Login\\Ingreso.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwEYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:44:18.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cs",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\main.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.cs",
+              "RelativeToolTip": "pv\\Frontend\\main.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:39:39.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\main.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:38:51.182Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Registrar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Registro\\Registrar.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\Registro\\Registrar.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Registro\\Registrar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\Registro\\Registrar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:37:59.386Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ingreso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Login\\Ingreso.cs",
+              "RelativeDocumentMoniker": "pv\\Frontend\\Login\\Ingreso.cs",
+              "ToolTip": "C:\\Users\\Master79\\Downloads\\proyecto remodelado-20241116T231435Z-001\\proyecto remodelado\\PV0.1\\PV0.1\\pv\\Frontend\\Login\\Ingreso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pv\\Frontend\\Login\\Ingreso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T02:37:56.722Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
