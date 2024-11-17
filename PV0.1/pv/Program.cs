@@ -15,7 +15,7 @@ namespace pv
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentaHecha());
+            Application.Run(new logmain());
         }
     }
 }

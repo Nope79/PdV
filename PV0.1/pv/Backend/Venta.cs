@@ -80,15 +80,15 @@ namespace pv.Backend
                             cmdDetalles.Parameters.AddWithValue("@cantidad", cantidad);
                             cmdDetalles.Parameters.AddWithValue("@precio", precio);
 
-                            Console.WriteLine("FUNCIONA");
                             cmdDetalles.ExecuteNonQuery();
-                            Console.WriteLine("FUNCIONA");
                         }
                     }
                 }
 
                 transaction.Commit();
                 x = true;
+                GenTicket g = new GenTicket();
+                g.GenerarRecibo(idVenta);
                 Console.WriteLine("Venta y detalles registrados correctamente.");
             }
             catch (Exception ex)

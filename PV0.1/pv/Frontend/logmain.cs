@@ -30,5 +30,10 @@ namespace pv.Frontend
             r.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

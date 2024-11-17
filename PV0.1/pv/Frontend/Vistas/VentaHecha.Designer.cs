@@ -34,13 +34,16 @@
             this.tbid = new System.Windows.Forms.TextBox();
             this.cbopcion = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtticket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.btnback);
             this.panel1.Controls.Add(this.dtticket);
             this.panel1.Controls.Add(this.tbid);
@@ -109,6 +112,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Buscar por...";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::pv.Properties.Resources._9004860_arrow_direction_left_back_icon;
+            this.pictureBox7.Location = new System.Drawing.Point(70, 337);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(67, 60);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
             // VentaHecha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -122,6 +135,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtticket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,5 +148,6 @@
         private System.Windows.Forms.ComboBox cbopcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

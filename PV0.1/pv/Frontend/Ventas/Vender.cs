@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using pv.Backend;
 
 namespace pv.Frontend.Ventas
 {

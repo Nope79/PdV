@@ -106,7 +106,7 @@
   <ItemGroup>
     <Compile Include="Backend\Connection.cs" />
     <Compile Include="Backend\Employees.cs" />
-    <Compile Include="Backend\GenerarTicket.cs" />
+    <Compile Include="Backend\GenTicket.cs" />
     <Compile Include="Backend\Productos.cs" />
     <Compile Include="Backend\Venta.cs" />
     <Compile Include="Frontend\Confirmar.cs">
@@ -245,6 +245,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -260,6 +261,71 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994380_access_enter_input_login_sign in_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994380_access_enter_input_login_sign in_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994380_access_enter_input_login_sign in_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781840_+_add_circle_create_expand_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781840_+_add_circle_create_expand_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994437_add_create_new_plus_positive_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3339045_business tools_store_home_office_shop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004715_cross_delete_remove_cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6586148_accept_check_good_mark_ok_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\653278_coin_bitcoin_cash_currency_dollar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\653278_coin_bitcoin_cash_currency_dollar_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3339034_business tools_receipt_page_print_ticket_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3709745_assistance_client_customer_employee_female_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5120889_drink_healthy_milk_nutrition_organic_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4544816_business_cash box_comerce_delivery_shop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\653278_coin_bitcoin_cash_currency_dollar_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3668846_money_cash_finance_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004860_arrow_direction_left_back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-4.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,14 +44,16 @@ namespace pv.Frontend.Vistas
             this.dtventas = new System.Windows.Forms.DataGridView();
             this.lblhello = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dtpinicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpfin = new System.Windows.Forms.DateTimePicker();
-            this.btnfiltro = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnnormal = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnfiltro = new System.Windows.Forms.Button();
+            this.dtpfin = new System.Windows.Forms.DateTimePicker();
+            this.dtpinicio = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtventas)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // btnback
@@ -93,6 +95,7 @@ namespace pv.Frontend.Vistas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.btnnormal);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -107,19 +110,33 @@ namespace pv.Frontend.Vistas
             this.panel1.Size = new System.Drawing.Size(1334, 618);
             this.panel1.TabIndex = 6;
             // 
-            // dtpinicio
+            // btnnormal
             // 
-            this.dtpinicio.Location = new System.Drawing.Point(764, 502);
-            this.dtpinicio.Name = "dtpinicio";
-            this.dtpinicio.Size = new System.Drawing.Size(200, 26);
-            this.dtpinicio.TabIndex = 6;
+            this.btnnormal.Location = new System.Drawing.Point(56, 471);
+            this.btnnormal.Name = "btnnormal";
+            this.btnnormal.Size = new System.Drawing.Size(107, 35);
+            this.btnnormal.TabIndex = 11;
+            this.btnnormal.Text = "Sin filtro";
+            this.btnnormal.UseVisualStyleBackColor = true;
+            this.btnnormal.Click += new System.EventHandler(this.btnnormal_Click);
             // 
-            // dtpfin
+            // label2
             // 
-            this.dtpfin.Location = new System.Drawing.Point(1002, 502);
-            this.dtpfin.Name = "dtpfin";
-            this.dtpfin.Size = new System.Drawing.Size(200, 26);
-            this.dtpfin.TabIndex = 7;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1075, 479);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "FIN";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(835, 479);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "INICIO";
             // 
             // btnfiltro
             // 
@@ -131,33 +148,29 @@ namespace pv.Frontend.Vistas
             this.btnfiltro.UseVisualStyleBackColor = true;
             this.btnfiltro.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // dtpfin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(835, 479);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "INICIO";
+            this.dtpfin.Location = new System.Drawing.Point(1002, 502);
+            this.dtpfin.Name = "dtpfin";
+            this.dtpfin.Size = new System.Drawing.Size(200, 26);
+            this.dtpfin.TabIndex = 7;
             // 
-            // label2
+            // dtpinicio
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1075, 479);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "FIN";
+            this.dtpinicio.Location = new System.Drawing.Point(764, 502);
+            this.dtpinicio.Name = "dtpinicio";
+            this.dtpinicio.Size = new System.Drawing.Size(200, 26);
+            this.dtpinicio.TabIndex = 6;
             // 
-            // btnnormal
+            // pictureBox7
             // 
-            this.btnnormal.Location = new System.Drawing.Point(56, 471);
-            this.btnnormal.Name = "btnnormal";
-            this.btnnormal.Size = new System.Drawing.Size(107, 35);
-            this.btnnormal.TabIndex = 11;
-            this.btnnormal.Text = "Sin filtro";
-            this.btnnormal.UseVisualStyleBackColor = true;
-            this.btnnormal.Click += new System.EventHandler(this.btnnormal_Click);
+            this.pictureBox7.Image = global::pv.Properties.Resources._9004860_arrow_direction_left_back_icon;
+            this.pictureBox7.Location = new System.Drawing.Point(47, 528);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(42, 34);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
             // 
             // Ventasx
             // 
@@ -171,6 +184,7 @@ namespace pv.Frontend.Vistas
             ((System.ComponentModel.ISupportInitialize)(this.dtventas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,5 +200,6 @@ namespace pv.Frontend.Vistas
         private Label label1;
         private Button btnfiltro;
         private Button btnnormal;
+        private PictureBox pictureBox7;
     }
 }

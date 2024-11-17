@@ -75,5 +75,10 @@ namespace pv.Frontend
                 Console.WriteLine(ex);
             }
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
