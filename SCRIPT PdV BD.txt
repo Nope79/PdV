@@ -2,37 +2,67 @@
 
 -- CREAR LA TABLA DE CLIENTES
 
-create clientes(
-
-
+create table clientes(
+	
+    id int primary key auto_increment,
+    nombre varchar(50) not null, 
+    telefono char(10) not null,
+    edad int not null check (edad > 0),
+    sexo enum('M', 'F') not null
 );
 
 -- CREAR LA TABLA DE PRODUCTOS
 
 create table productos(
-
-
+	id int primary key auto_increment,
+    cod varchar(13),
+    nombre varchar(40) not null,
+    precio decimal(10, 2) not null check (precio > 0),
+    iva decimal(4, 2) not null check (iva >= 0 && iva <= 100),
+    stock int not null check (stock >= 0),
+    marca varchar(30) not null,
+    descripcion text,
+    peso decimal(10, 3) not null check (peso > 0),
+    img blob
 );
 
 -- CREAR TABLA DE EMPLEADOS
 
-create table empleados(
-
-
+create table empleados(	
+	id int primary key auto_increment,
+    nombre varchar(80) not null,
+    usuario varchar(50) not null,
+    contrasena char(64) not null,
+    correo varchar(50) not null,
+    telefono char(10) not null
 );
 
 -- CREAR TABLA DE VENTAS
 
-create table ventas(
-
-
+create table ventas(	
+	id int primary key auto_increment,
+    id_empleado int,
+    id_cliente int,
+    importe decimal(10, 2) not null check (importe > 0),
+    subtotal decimal(10, 2) not null check (importe > 0),
+    total decimal(10, 2) not null check(total > 0),
+    fecha datetime default current_timestamp,
+    metodo_pago enum('Efectivo','Tarjeta de Crédito','Tarjeta de Débito','Transferencia Bancaria','Otro') not null,
+    descripcion varchar(255) default 'Cliente satisfecho',
+    foreign key (id_empleado) references empleados(id) on delete set null on update cascade,
+    foreign key (id_cliente) references cliente(id) on delete set null on update cascade
 );
 
 -- CREAR TABLA DETALLES DE VENTAS
 
 create table detalles_venta(
-
-
+	id int primary key auto_increment,
+    id_venta int,
+    id_producto int,
+    cantidad_producto int not null check (cantidad_producto > 0),
+    precio_unitario decimal(10, 2) not null check(precio_unitario > 0),
+    foreign key (id_venta) references ventas(id) on delete set null on update cascade,
+    foreign key (id_producto) references productos(id) on delete set null on update cascade
 );
 
 -- INSERTAR CLIENTES EN LA BASE DE DATOS
