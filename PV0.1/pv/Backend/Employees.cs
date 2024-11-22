@@ -27,22 +27,6 @@ namespace pv.Backend
             pass = Pass;
         }
 
-        private string EncriptarPassword(string password)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                StringBuilder builder = new StringBuilder();
-                foreach (byte b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-
-                return builder.ToString();
-            }
-        }
-
         public (int, string) validar_login(string usuario, string pass)
         {
             string res = "Usuario o contraseña incorrectos.";
