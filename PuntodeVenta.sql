@@ -82,24 +82,55 @@ create table detalles_venta(
 
 -- STORE PROCEDURE PARA INSERTAR CLIENTES
 
+delimiter //
+
+create procedure insertar_clientes(
+	in p_nombre varchar(50),
+    in p_telefono char(10),
+    in p_edad int,
+    in p_sexo char(1)
+)
+begin
+	insert into clientes (nombre, telefono, edad, sexo)
+    values(p_nombre, p_telefono, p_edad, p_sexo);
+end //
+
 -- STORE PROCEDURE PARA ELIMINAR CLIENTES
 
-DELIMITER //
-
-CREATE PROCEDURE insertar_empleado(
-    IN p_nombre VARCHAR(80),
-    IN p_usuario VARCHAR(50),
-    IN p_contrasena CHAR(64),
-    IN p_correo VARCHAR(50),
-    IN p_telefono CHAR(10)
+create procedure eliminar_clientes(
+	in p_id int
 )
-BEGIN
-    INSERT INTO empleados (nombre, usuario, contrasena, correo, telefono)
-    VALUES (p_nombre, p_usuario, p_contrasena, p_correo, p_telefono);
-END //
+begin
+	
+    if exists (select 1 from clientes where id = p_id) then
+		delete from clientes
+		where id = p_id;
+	else
+		signal sqlstate '45000'
+		set message_text = 'No se encontró un cliente con el id especificado.';
+	end if;
+end //
 
 -- STORE PROCEDURE PARA ACTUALIZAR CLIENTES
 
+create procedure actualizar_clientes(
+	in p_id int,
+	in p_nombre varchar(50),
+    in p_telefono char(10),
+    in p_edad int,
+    in p_sexo char(1)
+)
+begin
+	
+    if exists (select 1 from clientes where id = p_id) then
+		update clientes
+        set nombre = p_nombre, telefono = p_telefono, edad = p_edad, sexo = p_sexo
+        where id = p_id;
+	else
+		signal sqlstate '45000'
+		set message_text = 'No se encontró un cliente con el id especificado.';
+	end if;
+end //
 -- 2.- CREAR STORE PROCEDURE PARA INSERTAR UNA VENTA CON DATOS ALEATORIOS.RECIBE CANTIDAD DE VENTAS A INSERTAR Y SIMULAR UNA VENTA REAL. DE ESTE AÑO, FECHA ALEATORIA
 
 -- 3.- EJECUTAR EL STORE PROCEDURA PARA HACER PRUEBAS, Y CUANDO FUNCIONE, INSERTAR 2000 A 5000 DATOS.

@@ -65,11 +65,11 @@ create table detalles_venta(
     foreign key (id_producto) references productos(id) on delete set null on update cascade
 );
 
--- INSERTAR CLIENTES EN LA BASE DE DATOS
+-- INSERTAR CLIENTES EN LA BASE DE DATOS (ID, NOMBRE, TELEFONO, EDAD, SEXO)
 
--- INSERTAR PRODUCTOS EN LA BASE DE DATOS
+-- INSERTAR PRODUCTOS EN LA BASE DE DATOS (ID, COD, NOMBRE, PRECIO, IVA, STOCK, MARCA, DESCRIPCION, PESO, IMG)
 
--- INSERTAR EMPLEADOS EN LA BASE DE DATOS
+-- INSERTAR EMPLEADOS EN LA BASE DE DATOS (ID, NOMBRE, USUARIO, CONTRASENA, CORREO, TELEFONO)
 
 -- CREAR FUNCIÓN PARA INSERTAR VENTAS EN LA BASE DE DATOS
 
@@ -78,8 +78,59 @@ create table detalles_venta(
 -- CREAR FUNCIÓN PARA INSERTAR TANTO VENTAS COMO DETALLES DE VENTA
 
 -- TODO
--- 1.- CREAR STORE PROCEDURE PARA HACER INSERSIONES DE EMPLEADOS EN LUGAR DE USAR CONSULTAS NORMALES
+-- 1.- CREAR STORE PROCEDURE PARA INSERTAR, ELIMINAR Y ACTUALIZAR CLIENTES EN LUGAR DE USAR CONSULTAS NORMALES
 
+-- STORE PROCEDURE PARA INSERTAR CLIENTES
+
+delimiter //
+
+create procedure insertar_clientes(
+	in p_nombre varchar(50),
+    in p_telefono char(10),
+    in p_edad int,
+    in p_sexo char(1)
+)
+begin
+	insert into clientes (nombre, telefono, edad, sexo)
+    values(p_nombre, p_telefono, p_edad, p_sexo);
+end //
+
+-- STORE PROCEDURE PARA ELIMINAR CLIENTES
+
+create procedure eliminar_clientes(
+	in p_id int
+)
+begin
+	
+    if exists (select 1 from clientes where id = p_id) then
+		delete from clientes
+		where id = p_id;
+	else
+		signal sqlstate '45000'
+		set message_text = 'No se encontró un cliente con el id especificado.';
+	end if;
+end //
+
+-- STORE PROCEDURE PARA ACTUALIZAR CLIENTES
+
+create procedure actualizar_clientes(
+	in p_id int,
+	in p_nombre varchar(50),
+    in p_telefono char(10),
+    in p_edad int,
+    in p_sexo char(1)
+)
+begin
+	
+    if exists (select 1 from clientes where id = p_id) then
+		update clientes
+        set nombre = p_nombre, telefono = p_telefono, edad = p_edad, sexo = p_sexo
+        where id = p_id;
+	else
+		signal sqlstate '45000'
+		set message_text = 'No se encontró un cliente con el id especificado.';
+	end if;
+end //
 -- 2.- CREAR STORE PROCEDURE PARA INSERTAR UNA VENTA CON DATOS ALEATORIOS.RECIBE CANTIDAD DE VENTAS A INSERTAR Y SIMULAR UNA VENTA REAL. DE ESTE AÑO, FECHA ALEATORIA
 
 -- 3.- EJECUTAR EL STORE PROCEDURA PARA HACER PRUEBAS, Y CUANDO FUNCIONE, INSERTAR 2000 A 5000 DATOS.
