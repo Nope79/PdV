@@ -240,7 +240,13 @@ begin
         set j = 1;
         
         -- CONTAMOS LOS RENGLONES DE LAS VENTAS, Y PREPARAMOS EL ID_V PARA QUE GUARDE LA PRÓXIMA VENTA CON EL ID ADECUADO
-        set id_v = ((select id from ventas order by id desc limit 1) + 1);
+        set id_v =  (
+					select 
+						case
+						when (select count(*) from ventas) = 0 then 1
+						else (select id from ventas order by id desc limit 1)
+						end
+		);
         
         -- PREPARAMOS LAS SUMATORIAS DE LA I-ESIMA VENTA
         set subtot_v = 0;
@@ -291,13 +297,69 @@ begin
     
 end //
 
+ delimiter ;
+
 -- 3.- EJECUTAR EL STORE PROCEDURA PARA HACER PRUEBAS, Y CUANDO FUNCIONE, INSERTAR 2000 A 5000 DATOS.
 
+-- DIVIDIMOS POR LOTES LAS LLAMADAS PARA EVITAR SOBRECARGA EN EL SERVIDOR DE MYSQL
+call ventas_random(500);
+call ventas_random(500);
+call ventas_random(500);
+call ventas_random(500);
+call ventas_random(500);
+
 -- 4.- REPORTE DE VENTAS POR MES (FOLIO, FECHA, CLIENTE, EMPLEADO, TOTAL, CANTIDAD DE VENTAS HECHAS)
+create view reporte_ventas_mes as
+	select v.id as Folio, v.fecha, c.nombre, e.nombre, v.total, count(*)
+	from ventas v
+	join clientes c
+	on v.id_cliente = c.id
+	join empleados e
+	on v.id_empleado = e.id
+	join detalles_venta dv
+	on v.id = dv.id_venta
+	group by v.id;
 
 -- 5.- REPORTE DE VENTAS POR EMPLEADO (NOMBRE, TOTAL, CANTIDADVENTAS)
+create view ventas_por_empleado as
+	select e.nombre, sum(v.total) as total, count(*)
+    from empleados e
+    join ventas v
+    on e.id = v.id_empleado
+    group by e.nombre;
 
 -- 6.- REPORTE COMPARATIVO DE VENTAS POR UN DETERMINADO PRODUCTO A LO LARGO DE CADA UNO DE LOS TRIMESTRES DEL AÑO
+
+create view ventas_por_trimestre as
+	select p.nombre as Producto,
+    coalesce(sum(
+				case
+					when month(v.fecha) between 1 and 3 then dv.cantidad_producto
+                    else 0
+				end), 0) as Trim_1,
+	coalesce(sum(
+				case
+					when month(v.fecha) between 4 and 6 then dv.cantidad_producto
+                    else 0
+				end), 0) as Trim_2,
+	coalesce(sum(
+				case
+					when month(v.fecha) between 7 and 9 then dv.cantidad_producto
+                    else 0
+				end), 0) as Trim_3,
+	coalesce(sum(
+				case
+					when month(v.fecha) between 10 and 12 then dv.cantidad_producto
+                    else 0
+				end), 0) as Trim_4
+	from productos p
+    left join detalles_venta dv
+    on p.id = dv.id_producto
+    left join 
+    ventas v 
+    on dv.id_venta = v.id
+    group by p.nombre;
+
 
 -- 7.- Crear un trigger de auditoría que revise los cambios en la tabla de ventas para insert, update y delete. El trigger debe registrar el cambio, quien y cuando lo realizó.
 
@@ -315,7 +377,6 @@ end //
 -- Script documentado de la base de datos (debe incluir todas las ventas).
 -- Diccionario de datos.
 -- Código fuente DOCUMENTADO en GIT HUB (java, csharp, php etc).
- delimiter ;
 
 
--- call ventas_random(10);
+
