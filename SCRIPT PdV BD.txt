@@ -131,7 +131,57 @@ begin
 		set message_text = 'No se encontró un cliente con el id especificado.';
 	end if;
 end //
+
 -- 2.- CREAR STORE PROCEDURE PARA INSERTAR UNA VENTA CON DATOS ALEATORIOS.RECIBE CANTIDAD DE VENTAS A INSERTAR Y SIMULAR UNA VENTA REAL. DE ESTE AÑO, FECHA ALEATORIA
+
+create procedure actualizar_clientes(
+	in n int
+)
+begin
+	
+    declare i int default 1;
+    
+    while i <= n do
+		-- logica
+        
+        set r_id_cliente = (select id from clientes order by rand() limit 1);
+        set r_id_empleado = (select id from clientes order by rand() limit 1);
+        
+        -- 	TRUNCAMOS EL VALOR GENERADO DE MULTIPLICAR UN NUMERO ALEATORIO ENTRE 0 Y 1
+        --  POR EL RANGO MAXIMO MENOS EL RANGO MINIMO MAS 1, Y AL RESULTADO LE SUMAMOS EL RANGO MINIMO
+        set cantdet = floor(rand() * (15 - 1 + 1)) + 1;
+        set j = 1;
+        
+        set id_v = (
+					select 
+						case
+						when (select count(*) from ventas) = 0 then 1
+						else (select id from venta order by id desc limit 1)
+						end
+		);
+        
+        -- COMO PRIMERO VAMOS A MODIFICAR UNA TABLA QUE DEPENDE DE OTRA, APAGAMOS EL CHECK DE LOS FOREIGN KEYS PARA PODER HACER LA INSERCION
+        set foreign_key_checks = 0;
+        while j <= cantdet do
+			set r_id_producto = (select id from productos order by rand() limit 1);
+            set cantidad = floor(rand() * (10 - 1 + 1)) + 1;
+            set precio = (select precio from productos where id = r_id_producto);
+            
+            insert into detalles_venta(id_venta, id_producto, cantidad_producto, precio_unitario) values(id_v, r_id_producto, cantidad, precio);
+            
+            set j = j + 1;
+        end while;
+        
+        -- NO OLVIDAR ENCENDER EL CHECKEO DE LAS FOREIGN KEYS PARA EVITAR POSIBLES INCONSISTENCIAS ACCIDENTALES SIN SIQUIERA ENTERARNOS
+        set foreign_key_checks = 1;
+        
+        set i = i + 1;
+    end while;
+    
+    SELECT FLOOR(RAND() * (rango_max - rango_min + 1)) + rango_min AS valor_aleatorio;
+
+
+end //
 
 -- 3.- EJECUTAR EL STORE PROCEDURA PARA HACER PRUEBAS, Y CUANDO FUNCIONE, INSERTAR 2000 A 5000 DATOS.
 
