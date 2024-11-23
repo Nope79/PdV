@@ -1,8 +1,8 @@
 -- SCRIPT QUE CREA LA BASE DE DATOS DEL PUNTO DE VENTA. TODOS LOS DERECHOS RESERVADOS.
 
-drop database pruebas;
-create database pruebas;
-use pruebas;
+drop database PuntoDeVenta;
+create database PuntoDeVenta;
+use PuntoDeVenta;
 
 -- CREAR LA TABLA DE CLIENTES
 
@@ -18,7 +18,7 @@ create table clientes(
 
 create table productos(
 	id int primary key auto_increment,
-    cod varchar(13),
+    cod varchar(19),
     nombre varchar(40) not null,
     precio decimal(10, 2) not null check (precio > 0),
     iva decimal(4, 2) not null check (iva >= 0 && iva <= 100),
@@ -121,6 +121,35 @@ INSERT INTO empleados (nombre, usuario, contrasena, correo, telefono) VALUES
 ('Ana Ramírez', 'anar', 'password101', 'ana@example.com', '5554567890'),
 ('Luis Martínez', 'luism', 'password112', 'luis@example.com', '5555678901');
 
+-- PRIMERO QUE NADA, HACEMOS UN TRIGGER PARA HACER QUE CON CADA VENTA, REDUZCA EL INVENTARIO DE LOS PRODUCTOS VENDIDOS, CONTROLANDO EL CASO EN EL QUE SE VENDA MÁS DE LO QUE SE TIENE.
+
+delimiter //
+ create trigger val_inv_prod
+	before insert on detalles_venta
+    for each row
+    begin
+    
+		-- USAMOS VARIABLES PARA TRABAJAR DE FORMA MAS CLARA, LA PRIMERA ES PARA LA CANTIDAD DE PRODUCTOS QUE SE VENDEN, LA SEGUNDA ES LA CANTIDAD DE PRODUCTOS CON LA QUE SE CUENTA
+		declare dif_inv int;
+        declare cant int;
+        set dif_inv = new.cantidad_producto;
+        set cant = (select stock from productos where id = new.id_producto);
+        
+        -- SI NOS PIDEN MAS DE LO QUE TENEMOS, NO PODEMOS HACER LA VENTA.
+		if cant - dif_inv < 0 then
+			signal sqlstate '45000'
+            set message_text = 'No puedes realizar la venta puesto que no disponemos de esa cantidad de artículos.';
+		else	
+			-- EN CASO DE TENER SUFICIENTE INVENTARIO, ACTUALIZAMOS LA TABLA DE PRODUCTOS PARA RESTARLE AL INVENTARIO LO QUE SE HAN LLEVADO CON LA VENTA
+			update productos
+            set stock = stock - dif_inv
+            where productos.id = new.id_producto;
+		
+		end if;
+    end //
+
+delimiter ;
+
 -- TODO
 -- 1.- CREAR STORE PROCEDURE PARA INSERTAR, ELIMINAR Y ACTUALIZAR CLIENTES EN LUGAR DE USAR CONSULTAS NORMALES
 
@@ -148,11 +177,12 @@ create procedure eliminar_clientes(
 	in p_id int
 )
 begin
-	
+	-- EN CASO DE QUE EXISTA EL ID DEL CLIENTE A BORRAR
     if exists (select 1 from clientes where id = p_id) then
 		-- BORRAR CLIENTES
         delete from clientes
 		where id = p_id;
+	-- SI NO EXISTE, ARROJAMOS ERROR
 	else
 		-- MENSAJE DE ERROR
 		signal sqlstate '45000'
@@ -178,6 +208,7 @@ begin
 		update clientes
         set nombre = p_nombre, telefono = p_telefono, edad = p_edad, sexo = p_sexo
         where id = p_id;
+	-- SI NO EXISTE, LANZAMOS ERROR
 	else
 		-- MENSAJE DE ERROR
 		signal sqlstate '45000'
@@ -185,10 +216,10 @@ begin
 	end if;
 end //
 
--- 2.- CREAR STORE PROCEDURE PARA INSERTAR UNA VENTA CON DATOS ALEATORIOS.RECIBE CANTIDAD DE VENTAS A INSERTAR Y SIMULAR UNA VENTA REAL. DE ESTE AÑO, FECHA ALEATORIA
+-- 2.- CREAR STORE PROCEDURE PARA INSERTAR UNA VENTA CON DATOS ALEATORIOS. RECIBE CANTIDAD DE VENTAS A INSERTAR Y SIMULA UNA VENTA REAL. DE ESTE AÑO, FECHA ALEATORIA
 
 create procedure ventas_random(
-	-- NUMERO DE VENTAS ALEATORIAS QUE SE INSERTARÁN 
+	-- NUMERO DE VENTAS ALEATORIAS QUE SE INSERTARAN 
 	in n int
 )
 begin
@@ -199,14 +230,14 @@ begin
     declare i int default 1;
     declare j int;
     
-    -- VARIABLES PARA OBTENER ID'S DE LAS TABLAS, LOS PRIMEROS 3 ALEATORIOS, EL ÚLTIMO, DE LA ÚLTIMA VENTA SEGÚN EL AUTO_INCREMENT
+    -- VARIABLES PARA OBTENER ID'S DE LAS TABLAS, LOS PRIMEROS 3 ALEATORIOS, EL ULTIMO, DE LA ULTIMA VENTA SEGUN EL AUTO_INCREMENT
     declare r_id_cliente int;
     declare r_id_empleado int;
     declare r_id_producto int;
     declare id_v int;
     
     -- VARIABLES QUE SE RELACIONAN LA TABLA VENTA Y DETALLES DE VENTA
-    declare cantdet int;				-- PRODUCTOS ÚNICOS POR VENTA
+    declare cantdet int;				-- PRODUCTOS UNICOS POR VENTA
     declare subtot_v decimal(10, 2);	-- SUBTOTAL DE LA VENTA (SUMA DE LOS SUBTOTALES POR PRODUCTO, QUE ES LA CANTIDAD DE PRODUCTOS POR SU PRECIO UNITARIO)
     declare tot_v decimal(10, 2); 		-- APLICAR IMPUESTOS A LOS PRODUCTOS
     declare cantidad int;				-- CANTIDAD DEL MISMO PRODUCTO VENDIDO, VALOR ALEATORIO
@@ -310,7 +341,7 @@ call ventas_random(500);
 
 -- 4.- REPORTE DE VENTAS POR MES (FOLIO, FECHA, CLIENTE, EMPLEADO, TOTAL, CANTIDAD DE VENTAS HECHAS)
 create view reporte_ventas_mes as
-	select v.id as Folio, v.fecha, c.nombre, e.nombre, v.total, count(*)
+	select v.id as Folio, v.fecha, c.nombre as cliente, e.nombre as empleado, v.total, count(*) as cantidad_ventas
 	from ventas v
 	join clientes c
 	on v.id_cliente = c.id
@@ -319,6 +350,7 @@ create view reporte_ventas_mes as
 	join detalles_venta dv
 	on v.id = dv.id_venta
 	group by v.id;
+    -- PARA CONSEGUIR LOS DATOS, NECESITAMOS HACER UNIONES ENTRE TABLAS Y AGRUPAR TODO POR EL ID DE LA VENTA
 
 -- 5.- REPORTE DE VENTAS POR EMPLEADO (NOMBRE, TOTAL, CANTIDADVENTAS)
 create view ventas_por_empleado as
@@ -327,6 +359,7 @@ create view ventas_por_empleado as
     join ventas v
     on e.id = v.id_empleado
     group by e.nombre;
+    -- UNION ENTRE EMPLEADOS Y VENTAS, AGRUPAMOS TODO POR EL NOMBRE DEL EMPLEADO
 
 -- 6.- REPORTE COMPARATIVO DE VENTAS POR UN DETERMINADO PRODUCTO A LO LARGO DE CADA UNO DE LOS TRIMESTRES DEL AÑO
 
@@ -359,24 +392,126 @@ create view ventas_por_trimestre as
     ventas v 
     on dv.id_venta = v.id
     group by p.nombre;
+	-- ES IMPORTANTE ACLARAR VARIOS PUNTOS:
+    -- LOS TRIMESTRES DIVIDEN AL AÑO Y SE ENCARGAN DE HACER LA SUMA DE LA TABLA DETALLES_VENTA, ESTO SE HACE POR EL MES DE LA FECHA, VIENDO A CUAL DE LOS TRIMESTRES PERTENECE.
+    -- SE USA EL COALSESCE EN CASO DE QUE UN PRODUCTO NO HAYA SIDO VENDIDO NINGUNA VEZ EN EL AÑO, PARA MOSTRAR TODOS SUS RESULTADOS EN 0 Y QUE APAREZCA SU RENGLON.
+    -- SE USA UN LEFT JOIN PARA QUE SE TOMEN EN CUANTA LOS RENGLONES DE LOS PRODUCTOS QUE NO TIENEN CONEXION CON NINGUN RENGLON EN LA TABLA DETALLES_VENTA.
+    -- TODO SE AGRUPA POR EL NOMBRE DEL PRODUCTO.
 
+-- 7.- CREAR UN TRIGGER DE AUDITORIA PARA REVISAR LOS CAMBIOS EN LA TABLA VENTAS AL INSERTAR, ACTUALIZAR Y BORRAR (CAMBIO, EMPLEADO, FECHA)
 
--- 7.- Crear un trigger de auditoría que revise los cambios en la tabla de ventas para insert, update y delete. El trigger debe registrar el cambio, quien y cuando lo realizó.
+-- CREAMOS LA TABLA PARA GUARDAR LA INFORMACION DE LAS AUDITORIAS
+create table auditoria_ventas(
+	id int primary key auto_increment,
+    accion enum('INSERT', 'UPDATE', 'DELETE') not null,
+    usuario varchar(50),
+    fecha timestamp default current_timestamp,
+    datos_anteriores text,
+    datos_nuevos text
+);
 
--- 8.- Crear un trigger de validación para la tabla productos. Debe validar lo siguiente:
-	-- a. Los precios de los productos no deben ser negativos.
-	-- b. No se deben permitir textos vacíos en el nombre de un producto, es decir, no permitir el
-	-- nombre de un producto que tenga solamente espacios en blanco.
-	-- c. Se permiten productos sin CÓDIGO DE BARRAS (es decir en null) pero cuando se inserta un
-	-- código de barras, este siempre debe tener mínimo 8 y máximo 20 caracteres.
+delimiter //
+
+-- INSERTAR, COMO TRABAJAMOS CON UN REGISTRO NUEVO, USAMOS NEW, Y SE VERIFICA DESPUES DE LA INSERSION
+
+create trigger insert_venta
+after insert on ventas
+for each row
+begin 
+	insert into auditoria_ventas(accion, usuario, datos_nuevos)
+    values('INSERT', 
+    (select nombre from empleados where id = new.id_empleado), 
+	concat("ID: ", new.id, ", ID_empleado: ", new.id_empleado, ", ID_cliente: ", new.id_cliente, ", Importe: ", new.importe, ", Subtotal: ", new.subtotal,
+			", Total: ", new.total, ", Fecha: ", new.fecha, ", Met_pago: ", new.metodo_pago, ", Descripción: ", new.descripcion));
+end //
+
+-- BORRAR, COMO TRABAJAMOS CON UN REGISTRO VIEJO, USAMOS OLD, Y SE VERIFICA DESPUES DE LA ELIMINACION
+
+create trigger borrar_venta
+after delete on ventas
+for each row
+begin 
+	insert into auditoria_ventas(accion, usuario, datos_anteriores)
+    values('DELETE', 
+    (select nombre from empleados where id = old.id_empleado), 
+	concat("ID: ", old.id, ", ID_empleado: ", old.id_empleado, ", ID_cliente: ", old.id_cliente, ", Importe: ", old.importe, ", Subtotal: ", old.subtotal,
+			", Total: ", old.total, ", Fecha: ", old.fecha, ", Met_pago: ", old.metodo_pago, ", Descripción: ", old.descripcion));
+end //
+
+-- ACTUALIZAR, COMO TRABAJAMOS CON UN REGISTRO NUEVO PERO NECESITAMOS VER EL ANTERIOR, USAMOS TANTO NEW COMO OLD, Y SE VERIFICA DESPUES DE LA ACTUALIZACION
+
+create trigger actualizar_venta
+after update on ventas
+for each row
+begin 
+	insert into auditoria_ventas(accion, usuario, datos_anteriores, datos_nuevos)
+    values('UPDATE', 
+    (select nombre from empleados where id = new.id_empleado), 
+    concat("ID: ", old.id, ", ID_empleado: ", old.id_empleado, ", ID_cliente: ", old.id_cliente, ", Importe: ", old.importe, ", Subtotal: ", old.subtotal,
+			", Total: ", old.total, ", Fecha: ", old.fecha, ", Met_pago: ", old.metodo_pago, ", Descripción: ", old.descripcion),
+	concat("ID: ", new.id, ", ID_empleado: ", new.id_empleado, ", ID_cliente: ", new.id_cliente, ", Importe: ", new.importe, ", Subtotal: ", new.subtotal,
+			", Total: ", new.total, ", Fecha: ", new.fecha, ", Met_pago: ", new.metodo_pago, ", Descripción: ", new.descripcion));
+end //
+
+-- 8.- CREAR UN TRIGGER DE VALIDACION PARA LA TABLA PRODUCTOS QUE VALIDE:
+	-- A. LOS PRECIOS NO PUEDEN SER NEGATIVOS
+    -- B. NO SE PERMITEN NOMBRES CON SOLO ESPACIOS COMO TEXTO.
+    -- C. EL CODIGO PUEDE SER NULL, O TENER ENTRE 8 Y 13 CARACTERES.
     
--- 9.- Crear una función que calcule la cantidad de productos (detalles de venta) que tiene una venta. Debe recibir como entrada el folio de la venta.
+    create trigger val_insersion_producto
+	before insert on productos
+    for each row
+    begin
+    
+		-- PRIMERA VALIDACION
+		if new.precio <= 0 then
+			signal sqlstate '45000'
+            set message_text = 'El producto tiene que tener un precio mayor a 0.';
+		
+        -- SEGUNDA VALIDACION
+		elseif length(trim(new.nombre)) = 0 then
+			signal sqlstate '45000'
+            set message_text = 'El nombre del producto no acepta solo espacios.';
+		
+        -- TERCERA VALIDAION
+        elseif new.cod is not null and (length(new.cod) > 13 or length(new.cod) < 8) then
+			signal sqlstate '45000'
+            set message_text = 'El código debe tener entre 8 y 13 caracteres.';
+		end if;
+        
+        -- ESTAREMOS TRABAJANDO CON UN BEFORE, PARA VALIDAR LA INSERCION PRIMERO, Y CON NEW PORQUE SE VALIDA LA FILA NUEVA ANTES DE INSERTARLA EN LA TABLA
+    end //
+    
+-- 9.- CALCULAR LA CANTIDAD DE PRODUCTOS QUE SE VENDEN POR VENTA, RECIBIENDO EL FOLIO (ID DE LA VENTA)
 
+-- CUENTA SOLAMENTE LOS DETALLES UNICOS
+create function detalles_productos_dv(id int)
+returns int
+deterministic
+begin
+	declare detalles int;
+    
+    set detalles = (select count(*) from detalles_venta
+					where id_venta = id);
+	return detalles;
+end //
+
+-- CUENTA EL TOTAL DE PRODUCTOS, INCLUYENDO LOS DUPLICADOS
+create function cantidad_total_productos_dv(id int)
+returns int
+deterministic
+begin
+	declare detalles int;
+    
+    set detalles = (select sum(cantidad_producto) from detalles_venta
+					where id_venta = id);
+	return detalles;
+end //
+
+delimiter ;
 
 -- Entregables:
 -- Script documentado de la base de datos (debe incluir todas las ventas).
 -- Diccionario de datos.
 -- Código fuente DOCUMENTADO en GIT HUB (java, csharp, php etc).
-
-
 
